@@ -14,6 +14,7 @@
 		31D0EA0A1B3D00250036AFB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D0EA091B3D00250036AFB5 /* Images.xcassets */; };
 		31D0EA0D1B3D00250036AFB5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D0EA0B1B3D00250036AFB5 /* LaunchScreen.xib */; };
 		31D0EA191B3D00250036AFB5 /* LXScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D0EA181B3D00250036AFB5 /* LXScrollViewTests.m */; };
+		31D0EA241B3D1D850036AFB5 /* LXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D0EA231B3D1D850036AFB5 /* LXScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		31D0EA121B3D00250036AFB5 /* LXScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D0EA171B3D00250036AFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31D0EA181B3D00250036AFB5 /* LXScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXScrollViewTests.m; sourceTree = "<group>"; };
+		31D0EA221B3D1D850036AFB5 /* LXScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXScrollView.h; sourceTree = "<group>"; };
+		31D0EA231B3D1D850036AFB5 /* LXScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		31D0E9FB1B3D00250036AFB5 /* LXScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				31D0EA221B3D1D850036AFB5 /* LXScrollView.h */,
+				31D0EA231B3D1D850036AFB5 /* LXScrollView.m */,
 				31D0EA001B3D00250036AFB5 /* AppDelegate.h */,
 				31D0EA011B3D00250036AFB5 /* AppDelegate.m */,
 				31D0EA031B3D00250036AFB5 /* ViewController.h */,
@@ -222,6 +227,7 @@
 				31D0EA051B3D00250036AFB5 /* ViewController.m in Sources */,
 				31D0EA021B3D00250036AFB5 /* AppDelegate.m in Sources */,
 				31D0E9FF1B3D00250036AFB5 /* main.m in Sources */,
+				31D0EA241B3D1D850036AFB5 /* LXScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 				31D0EA1E1B3D00250036AFB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31D0EA1F1B3D00250036AFB5 /* Build configuration list for PBXNativeTarget "LXScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				31D0EA211B3D00250036AFB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

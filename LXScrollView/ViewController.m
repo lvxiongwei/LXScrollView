@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "LXScrollView.h"
 
-@interface ViewController ()
+@interface ViewController () <LXScrollViewDelegate>
 
 @end
 
@@ -16,12 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *array = @[@"pic1",@"pic2",@"pic3"];
+    NSMutableArray *images = [NSMutableArray array];
+    
+    [array enumerateObjectsUsingBlock:^(NSString *name, NSUInteger idx, BOOL *stop) {
+        
+        UIImage *image = [UIImage imageNamed:name];
+        [images addObject:image];
+    }];
+    
+    LXScrollView *scrollView = [[LXScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200) contentImages:images];
+    scrollView.delegate = self;
+    [self.view addSubview:scrollView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchPicAtIndex:(int)index
+{
+    NSLog(@"--点击了第%d张图片--",index);
 }
-
 @end
